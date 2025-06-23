@@ -34,21 +34,21 @@
 ## 📸 Especies de Pinzones de Darwin
 
 ### 1. *Geospiza fortis* (Pinzón de tierra mediano)  
-![Geospiza fortis](https://upload.wikimedia.org/wikipedia/commons/f/f6/Geospiza_fortis.jpg)
+![Geospiza fortis](https://datazone.darwinfoundation.org/images/checklist/Medium_ground_finch.jpg))
 
 ---
 
 ### 2. *Geospiza scandens* (Pinzón de cactus común)  
-![Geospiza scandens](https://upload.wikimedia.org/wikipedia/commons/7/7b/Geospiza_scandens.jpg)
+![Geospiza scandens](https://live.staticflickr.com/5569/14526971708_a05780c112_b.jpg)
 
 ---
 
 ### 3. *Camarhynchus parvulus* (Pinzón carpintero pequeño)  
-![Camarhynchus parvulus](https://upload.wikimedia.org/wikipedia/commons/e/ef/Woodpecker_Finch_%28Camarhynchus_parvulus%29_%287086949123%29.jpg)
+![Camarhynchus parvulus](https://multimedia20stg.blob.core.windows.net/especies/01_Camarhynchus%20parvulus.jpg)
 
 ---
 
 ### 4. *Platyspiza crassirostris* (Pinzón vegetariano)  
-![Platyspiza crassirostris](https://upload.wikimedia.org/wikipedia/commons/4/4f/Vegetarian_Finch.jpg)
+![Platyspiza crassirostris](https://datazone.darwinfoundation.org/images/checklist/_mg_9066.jpg)
 
 # Pinzones_filogen-a-
