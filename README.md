@@ -76,6 +76,10 @@ Analiza los patrones de conservación y divergencia genética observados en los 
 
 ### 4. *Platyspiza crassirostris* (Pinzón vegetariano)  
 ![Platyspiza crassirostris](https://datazone.darwinfoundation.org/images/checklist/_mg_9066.jpg)
+### Genes que se van a utilizar para el analisis comparativo 
+ALDH2
+ALX1
+HMGA2
 
 ### Lista de comandos
 # Actualizar paquetes existentes
