@@ -167,4 +167,4 @@ echo "Modelo seleccionado por IQ-TREE: $(grep 'Best-fit model' alineamientos/ali
 
 # Crear archivo comprimido con los resultados importantes
 tar -czvf resultados_pinzones.tar.gz blast/ alineamientos/ arboles/ README.txt
-# Pinzones_filogen-a-
+# Pinzones en las Islas Galápagos
