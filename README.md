@@ -137,5 +137,6 @@ iqtree -s muscle_todas_proteinasaATOM.faa
 -nt AUTO: uso automático de núcleos de CPU
 ``
 * Abrir el árbol resultante en FigTree
+* Realizar el mismo procedimiento con las secuencias de RNA y comparar los arboles filogeneticos
 
 
