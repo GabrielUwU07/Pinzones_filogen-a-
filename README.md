@@ -6,25 +6,26 @@ El objetivo principal es encontrar y examinar los ortólogos en varias pinzonas 
 ## Cómo usar el programa
 
 * Preparar el ambiente de trabajo:
-Utilizar las herramientas necesarias, como MUSCLE, IQTREE, ATOM. Luego, descarga las secuencias codificantes de proteínas de las especies de pinzones de Darwin desde bases de datos públicas como NCBI o Ensembl.
+- Utilizar las herramientas necesarias, como MUSCLE, IQTREE, ATOM. Luego, descarga las secuencias codificantes de proteínas de las especies de pinzones de Darwin desde bases de datos públicas como NCBI o Ensembl.
 
 * Identificación de genes ortólogos:
-Con grep "", identificar los genes ortologos que se puede descargar para poder realizar un buen alineamiento.
+
+- Con grep "", identificar los genes ortologos que se puede descargar para poder realizar un buen alineamiento.
 
 * Alineamiento de genes:
-Emplea MUSCLE para realizar alineamientos múltiples de las proteínas ortólogas identificadas. Este paso es fundamental para comparar las secuencias y detectar regiones conservadas.
+- Emplea MUSCLE para realizar alineamientos múltiples de las proteínas ortólogas identificadas. Este paso es fundamental para comparar las secuencias y detectar regiones conservadas.
 
 4. Edición manual:
-Abre los archivos de alineamiento en Atom para verificar y corregir posibles errores en los nombres de las secuencias o en el alineamiento, asegurando la calidad de los datos.
+- Abre los archivos de alineamiento en Atom para verificar y corregir posibles errores en los nombres de las secuencias o en el alineamiento, asegurando la calidad de los datos.
 
 5. Construcción de árboles filogenéticos:
-Utiliza IQ-TREE para inferir árboles filogenéticos a partir de los alineamientos de proteínas. Esto permitirá observar las relaciones evolutivas entre las especies.
+- Utiliza IQ-TREE para inferir árboles filogenéticos a partir de los alineamientos de proteínas. Esto permitirá observar las relaciones evolutivas entre las especies.
 
 6. Visualización y anotación:
-Abre los árboles filogenéticos en FigTree para visualizar, editar y anotar los resultados, facilitando la interpretación de los patrones evolutivos.
+- Abre los árboles filogenéticos en FigTree para visualizar, editar y anotar los resultados, facilitando la interpretación de los patrones evolutivos.
 
 7. Interpretación:
-Analiza los patrones de conservación y divergencia genética observados en los árboles filogenéticos para inferir procesos evolutivos y adaptaciones específicas en los pinzones de Darwin.
+- Analiza los patrones de conservación y divergencia genética observados en los árboles filogenéticos para inferir procesos evolutivos y adaptaciones específicas en los pinzones de Darwin.
 
 ## ¿En qué organismo o grupo de organismos vas a trabajar?
 - Grupo taxonómico: **Pinzones de Darwin**
@@ -65,56 +66,69 @@ Analiza los patrones de conservación y divergencia genética observados en los 
 ![Platyspiza crassirostris](https://datazone.darwinfoundation.org/images/checklist/_mg_9066.jpg)
 
 ## Genes que se van a utilizar para el analisis comparativo 
-ALDH2
-ALX1
-HMGA2
+- ALDH2
+- ALX1
+- HMGA2
 
 ## Lista de comandos
 
 * Crear carpeta
+```
 mkdir Proyecto_pinzones
-
+```
 * Navegar al directorio de datos
+```
 cd Proyecto_pinzones
-
+```
 * Verificar las secuencias ortólogas
+```
 grep "gen de interes" Orthologs.IDS.txt
-
-* Descargar secuencias de proteínas de NCBI 
+```
+* Descargar secuencias de proteínas de NCBI
+```
 ./datasets download gene symbol ALDH2 --ortholog Thraupidae  --filename ALDH2_Thraupidae.zip
 ./datasets download gene symbol ALX1 --ortholog Thraupidae  --filename ALX1_Thraupidae.zip
 ./datasets download gene symbol HMGA2 --ortholog Thraupidae  --filename HMGA2_Thraupidae.zip
+``` 
 
 * Descomprimir archivos
+```
 unzip *.zip 
 o descomprimir uno por uno
-**Cambiar el nombre de todos los genes descomprimidos**
+```
+* **Cambiar el nombre de todos los genes descomprimidos**
 
 * Combinar todas las secuencias en un solo archivo para BLAST
+```
 cat *.faa > todas_proteinas.faa
-
+```
 * Crear base de datos BLAST
+```
 module av blast
 module load blast+/2.11.0
 makeblastdb -in todas_proteinas.faa -dbtype prot -out pinzones_db
-
+```
 * Ejecutar BLASTp
+```
 blastp -query todas_proteinas.faa -db nr -out results.barcode02.out -remote
-
+```
 * Ejecutar MUSCLE para alineamiento múltiple
+```
 ./muscle3.8.31_i86linux64 -in todas_proteinas.faa -out muscle_todas_proteinas.faa -maxiters 1 -diags
-
+```
 * Abrir en editor de texto (Atom), comandos especificos de atom:
+```
 **Find**
 ^>[^ ]+ (\w+) \[organism=([^\]]+)\].*
 **Replace**
 >$1 [organism=$2]
-
+```
 * Ejecutar IQ-TREE para inferencia filogenética
+```
 module av iqtree
 module load iqtree
 iqtree -s muscle_todas_proteinasaATOM.faa
-
+```
 * Explicación de parámetros:
 ``
 -s: archivo de alineamiento
