@@ -2,23 +2,23 @@
 begin taxa;
 	dimensions ntax=12;
 	taxlabels
-	ALDH2Camarhynchus_parvulus_1
-	ALDH2Geospiza_fortis_1
-	ALX1Geospiza_fortis_1
-	HMGA2Camarhynchus_parvulus_1
-	HMGA2Camarhynchus_parvulus_2
-	HMGA2Camarhynchus_parvulus_3
-	HMGA2Geospiza_fortis_1
-	HMGA2Geospiza_fortis_2
-	HMGA2Geospiza_fortis_3
-	HMGA2Geospiza_fortis_4
-	HMGA2Geospiza_fortis_5
-	HMGA2Geospiza_fortis_6
+	ALDH2Camarhynchus_parvulus_2
+	ALDH2Geospiza_fortis_2
+	ALX1Geospiza_fortis_2
+	HMGA2Camarhynchus_parvulus_4
+	HMGA2Camarhynchus_parvulus_5
+	HMGA2Camarhynchus_parvulus_6
+	HMGA2Geospiza_fortis_10
+	HMGA2Geospiza_fortis_11
+	HMGA2Geospiza_fortis_12
+	HMGA2Geospiza_fortis_7
+	HMGA2Geospiza_fortis_8
+	HMGA2Geospiza_fortis_9
 ;
 end;
 
 begin trees;
-	tree tree_1 = [&R] (HMGA2Geospiza_fortis_1:0.0,(((((((HMGA2Geospiza_fortis_2:1.0E-6,(ALX1Geospiza_fortis_1:1.048053,(ALDH2Geospiza_fortis_1:0.001207,ALDH2Camarhynchus_parvulus_1:0.001207):1.163087):0.800941):1.0E-6,HMGA2Camarhynchus_parvulus_3:0.0):0.0,HMGA2Geospiza_fortis_4:0.0):0.0,HMGA2Geospiza_fortis_6:0.0):0.0,HMGA2Geospiza_fortis_5:0.0):0.0,HMGA2Camarhynchus_parvulus_2:0.0):0.0,HMGA2Geospiza_fortis_3:0.0):0.0,HMGA2Camarhynchus_parvulus_1:0.0);
+	tree tree_1 = [&R] (ALDH2Geospiza_fortis_2:0.006023,ALDH2Camarhynchus_parvulus_2:0.00421,(ALX1Geospiza_fortis_2:0.27288,(((HMGA2Geospiza_fortis_7:1.0E-6,HMGA2Geospiza_fortis_8:1.0E-6):5.1E-4,((HMGA2Geospiza_fortis_9:1.0E-6,(HMGA2Geospiza_fortis_10:1.0E-6,HMGA2Geospiza_fortis_12:1.0E-6):2.0E-6):3.0E-6,HMGA2Geospiza_fortis_11:1.0E-6):0.016085):0.003086,(HMGA2Camarhynchus_parvulus_4:0.001824,(HMGA2Camarhynchus_parvulus_5:0.004085,HMGA2Camarhynchus_parvulus_6:0.005943):0.003577):0.003113):0.287143):0.578018);
 end;
 
 begin figtree;
@@ -39,7 +39,7 @@ begin figtree;
 	set branchLabels.fontStyle=0;
 	set branchLabels.isShown=false;
 	set branchLabels.significantDigits=4;
-	set layout.expansion=500;
+	set layout.expansion=805;
 	set layout.layoutType="RECTILINEAR";
 	set layout.zoom=0;
 	set legend.attribute=null;
@@ -76,9 +76,9 @@ begin figtree;
 	set polarLayout.rootLength=100;
 	set polarLayout.showRoot=true;
 	set radialLayout.spread=0.0;
-	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.alignTipLabels=true;
 	set rectilinearLayout.curvature=0;
-	set rectilinearLayout.rootLength=5049;
+	set rectilinearLayout.rootLength=0;
 	set scale.offsetAge=0.0;
 	set scale.rootAge=1.0;
 	set scale.scaleFactor=1.0;
@@ -100,11 +100,11 @@ begin figtree;
 	set tipLabels.colorAttribute="User selection";
 	set tipLabels.displayAttribute="Names";
 	set tipLabels.fontName="sansserif";
-	set tipLabels.fontSize=15;
+	set tipLabels.fontSize=13;
 	set tipLabels.fontStyle=0;
 	set tipLabels.isShown=true;
 	set tipLabels.significantDigits=4;
-	set trees.order=true;
+	set trees.order=false;
 	set trees.orderType="increasing";
 	set trees.rooting=false;
 	set trees.rootingType="User Selection";
