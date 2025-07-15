@@ -142,6 +142,6 @@ iqtree -s muscle_todas_proteinasaATOM.faa
 * Árbol de Proteínas
 ![Proteina](https://github.com/GabrielUwU07/Pinzones_filogen-a-/blob/main/ArbolProteinas.jpg)
 * Árbol de rna
-![RNA](https://github.com/GabrielUwU07/Pinzones_filogen-a-/blob/main/Arbolrna.png)
+![RNA](https://github.com/GabrielUwU07/Pinzones_filogen-a-/blob/main/Arbolrna.jpg.png)
  
 
