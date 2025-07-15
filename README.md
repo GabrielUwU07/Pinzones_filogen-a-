@@ -138,10 +138,13 @@ iqtree -s muscle_todas_proteinasaATOM.faa
 ``
 * Abrir el árbol resultante en FigTree
 * Realizar el mismo procedimiento con las secuencias de RNA y comparar los arboles filogeneticos
+
 # Comparativa de Arboles filogenéticos
 * Árbol de Proteínas
 ![Proteina](https://github.com/GabrielUwU07/Pinzones_filogen-a-/blob/main/ArbolProteinas.jpg)
 * Árbol de rna
 ![RNA](https://github.com/GabrielUwU07/Pinzones_filogen-a-/blob/main/Arbolrna.jpg.png)
- 
 
+# Carpetas adicionales
+![Programs](https://github.com/GabrielUwU07/Programs.git)
+![SCRIPS]()
