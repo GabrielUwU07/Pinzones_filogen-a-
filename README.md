@@ -147,4 +147,4 @@ iqtree -s muscle_todas_proteinasaATOM.faa
 
 # Carpetas adicionales
 ![Programs](https://github.com/GabrielUwU07/Programs.git)
-![SCRIPS]()
+![SCRIPS](https://github.com/GabrielUwU07/SCRIPS.git)
